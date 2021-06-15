@@ -37,6 +37,11 @@ const Contact = () => {
      },"user_qq1iYLeLniQugk6L29ip7")
      if (res.status === 200) {
        toast.success('Mail has been sent sucessfully');
+       setdata({
+        name: "",
+        email: "",
+        message: "",
+      })
      }else{
       toast.error('Mail sent Unsucessful');
      }
