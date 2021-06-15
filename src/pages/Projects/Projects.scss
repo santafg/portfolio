@@ -1,0 +1,140 @@
+// mixing
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bor {
+  border: 0.1rem solid black;
+}
+@mixin btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+// animations
+
+@keyframes updown {
+  from {
+    transform: translateY(1.5rem);
+  }
+  to {
+    transform: translateY(-1.5rem);
+  }
+}
+
+.projectContainer {
+  @include flex();
+  // @include bor();
+  .projectBox {
+    width: 80%;
+    margin-top: 10rem;
+    @include flex();
+    //   @include bor();
+
+    color: #00688b;
+    .picDiv {
+      //   @include bor();
+      @include flex();
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 50%;
+      .projectPic {
+        height: 50rem;
+        width: 60rem;
+        animation: updown 2.5s infinite alternate-reverse ease-in-out;
+      }
+    }
+    .porjectDiv {
+      // @include bor();
+      @include flex();
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 50%;
+      .head {
+        margin-bottom: 2rem;
+        h1 {
+          text-shadow: 0.2rem 0.2rem 0.4rem #33a1de;
+          font-size: 4rem;
+        }
+      }
+      .projects {
+        width: 100%;
+        @include flex();
+        margin: 1rem;
+        .project {
+          // @include bor();
+          border-radius: 1rem;
+          background-color: white;
+          // background-color: #AB82FF;
+          box-shadow: 0 0.5rem 1rem 0.5rem #62B1F6;
+          width: 50%;
+          @include flex();
+          flex-direction: column;
+          padding: 1rem;
+          cursor: pointer;
+          transition: 0.25s all;
+          &:hover {
+            box-shadow: 0 0.8rem 1.4rem 0.7rem #62B1F6;
+            transform: translateY(-0.5rem);
+          }
+          .project1 {
+            height: 14rem;
+            width: 100%;
+            border-radius: 0.5rem;
+          }
+          .description {
+            width: 100%;
+            margin-top: .5rem;
+            h2{
+              font-size: 2rem;
+            }
+            p{
+              // margin-top: .7rem;
+              font-size: 1.5rem;
+            }
+          }
+          .btn {
+            margin-top: 0.7rem;
+            width: 100%;
+            @include flex();
+            justify-content: flex-end;
+            button {
+              font-size: 2rem;
+              padding: 0.1rem 1rem;
+              background-color: #00688b;
+              border: 0.1rem solid #00688b;
+              border-radius: .5rem;
+              color: white;
+              transition: 0.25s ease-in-out;
+              cursor: pointer;
+              box-shadow: 0.2rem 0.3rem 0.5rem 0.2rem #3299cc;
+              &:hover {
+                color: #00688b;
+                background-color: white;
+                transform: translateY(-0.2rem);
+                box-shadow: 0.2rem 0.4rem 0.8rem 0.4rem #3299cc;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  html{
+    font-size: 52%;
+  }
+  .projectContainer{
+    .projectBox{
+      flex-direction: column;
+      .porjectDiv{
+        width: 100%;
+      }
+    }
+  }
+}

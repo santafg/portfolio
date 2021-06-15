@@ -1,0 +1,88 @@
+.navMobile {
+  height: 10rem;
+  z-index: 10;
+  width: 100vw;
+  background-color: #43aee7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.navMobile .port h1 {
+  font-size: 5rem;
+  color: #063764;
+}
+
+.navMobile .bar .barBtn {
+  font-size: 5rem;
+  color: white;
+}
+
+.none {
+  height: 0rem;
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 5;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.mobileLinks {
+  position: absolute;
+  margin-top: 9.5rem;
+  background-color: #26466db4;
+  height: 30rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 5;
+  padding: .5rem 2rem;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.mobileLinks .navlinks {
+  font-size: 4rem;
+  color: white;
+}
+
+.mobileLinks a {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
+}
+/*# sourceMappingURL=Mobilenav.css.map */

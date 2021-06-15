@@ -1,0 +1,175 @@
+@-webkit-keyframes aboutupdown {
+  from {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  to {
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+}
+
+@keyframes aboutupdown {
+  from {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  to {
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutContainer .aboutBox {
+  width: 80%;
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutContainer .aboutBox .infoDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+.aboutContainer .aboutBox .infoDiv .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #00688B;
+}
+
+.aboutContainer .aboutBox .infoDiv .info .heading {
+  width: 90%;
+}
+
+.aboutContainer .aboutBox .infoDiv .info .heading h1 {
+  font-size: 4rem;
+  text-shadow: .2rem .2rem .4rem #33A1DE;
+}
+
+.aboutContainer .aboutBox .infoDiv .info .details {
+  width: 90%;
+  margin-top: 1rem;
+}
+
+.aboutContainer .aboutBox .infoDiv .info .details p {
+  font-size: 1.8rem;
+}
+
+.aboutContainer .aboutBox .infoDiv .info .btn {
+  width: 90%;
+  margin-top: 1.5rem;
+}
+
+.aboutContainer .aboutBox .infoDiv .info .btn button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #00688B;
+  border: .1rem solid #00688B;
+  color: white;
+  padding: .6rem 1.2rem;
+  font-size: 2rem;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  -webkit-box-shadow: .2rem .3rem .5rem .2rem #3299CC;
+          box-shadow: .2rem .3rem .5rem .2rem #3299CC;
+}
+
+.aboutContainer .aboutBox .infoDiv .info .btn button:hover {
+  color: #00688B;
+  background-color: white;
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+  -webkit-box-shadow: .2rem .4rem .8rem .4rem #3299CC;
+          box-shadow: .2rem .4rem .8rem .4rem #3299CC;
+}
+
+.aboutContainer .aboutBox .picdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+.aboutContainer .aboutBox .picdiv .aboutPic {
+  height: 50rem;
+  width: 60rem;
+  animation: aboutupdown 2.5s infinite alternate-reverse ease-in-out;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+  .aboutContainer .aboutBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .aboutContainer .aboutBox .infoDiv {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=About.css.map */

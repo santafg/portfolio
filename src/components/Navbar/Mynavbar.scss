@@ -1,0 +1,31 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  // mixing
+  @mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin bor {
+    border: 0.1rem solid black;
+  }
+  @mixin btn {
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+  .mobileNav{
+      display: none;
+  }
+
+  @media (max-width: 768px) {
+      .Nav{
+          display: none;
+      }
+      .mobileNav{
+          display: flex;
+      }
+  }

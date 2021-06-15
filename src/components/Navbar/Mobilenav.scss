@@ -1,0 +1,68 @@
+// mixing
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin bor {
+    border: 0.1rem solid black;
+  }
+  @mixin btn {
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+
+     .navMobile{
+      height: 10rem;
+      z-index: 10;
+      width: 100vw;
+      background-color: #43aee7;
+      @include flex(); 
+      justify-content: space-between;
+      padding: 0 2rem;
+      .port{
+          h1{
+              font-size: 5rem;
+              color: #063764;
+          }
+      }
+      .bar{
+          .barBtn{
+              font-size: 5rem;
+              color: white;
+          }
+      }
+    }
+    .none{
+        height: 0rem;
+        position: absolute;
+        width: 100%;
+        @include flex();
+        flex-direction: column;
+        z-index: 5;
+        transition: .5s all;
+        
+    }
+    .mobileLinks{
+        position: absolute;
+        margin-top: 9.5rem;
+        background-color: #26466db4;
+        height: 30rem;
+        width: 100%;
+        @include flex();
+        flex-direction: column;
+        z-index: 5;
+        padding: .5rem 2rem;
+        transition: .5s all;
+        .navlinks{
+            font-size: 4rem;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 4rem;
+        }
+    }

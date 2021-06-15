@@ -1,0 +1,170 @@
+// mixing
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bor {
+  border: 0.1rem solid black;
+}
+@mixin btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+// animations
+
+@keyframes contactupdown {
+  from {
+    transform: translateY(2rem);
+  }
+  to {
+    transform: translateY(-2rem);
+  }
+}
+
+.contactContainer {
+  @include flex();
+  // @include bor();
+  height: 100vh;
+  .mytoast{
+    font-size: 1.5rem;
+  }
+  .contactBox {
+    width: 80%;
+    margin-bottom: -4rem;
+    @include flex();
+    //   @include bor();
+    .contactDiv {
+      // @include bor();
+      @include flex();
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 50%;
+      .formDiv {
+        @include flex();
+        justify-content: flex-start;
+        //   @include bor();
+        width: 100%;
+        margin-top: 1rem;
+        flex-direction: column;
+        color: #00688b;
+        .heading {
+          width: 90%;
+          h1 {
+            font-size: 4rem;
+            text-shadow: 0.2rem 0.2rem 0.4rem #33a1de;
+          }
+        }
+        .forms {
+          width: 90%;
+          margin-top: 1rem;
+          // @include bor();
+          @include flex();
+          flex-direction: column;
+          align-items: flex-start;
+          label {
+            display: flex;
+            margin-bottom: 1rem;
+            width: 100%;
+            border: 0.1rem solid #00688b;
+            padding: 0.5rem;
+            h2 {
+              font-size: 2rem;
+              width: 15%;
+            }
+            input {
+              width: 85%;
+              border: none;
+              outline: none;
+              color: #00688b;
+              font-size: 2rem;
+              background-color: transparent;
+            }
+          }
+          .messageArea {
+            border: 0.1rem solid #00688b;
+            // @include bor();
+            padding: 0.5rem;
+            width: 100%;
+            .head {
+              h2 {
+                font-size: 2rem;
+              }
+            }
+            .body {
+              width: 100%;
+              margin: 0.5rem 0;
+              @include flex();
+              textarea {
+                width: 90%;
+                font-size: 1.5rem;
+                border: none;
+                outline: none;
+                color: #00688b;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+        .btn {
+          width: 90%;
+          margin-bottom: 1.5rem;
+          margin-top: 2rem;
+          @include flex();
+          justify-content: space-between;
+          button {
+            @include btn();
+            background-color: #00688b;
+            border: 0.1rem solid #00688b;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            font-size: 2rem;
+            transition: 0.25s ease-in-out;
+            box-shadow: 0.2rem 0.3rem 0.5rem 0.2rem #3299cc;
+            &:hover {
+              color: #00688b;
+              background-color: white;
+              transform: translateY(-0.2rem);
+              box-shadow: 0.2rem 0.4rem 0.8rem 0.4rem #3299cc;
+            }
+          }
+          .links{
+            margin-right: 2rem;
+            a{
+              font-size: 3.5rem;
+              margin-left: .5rem;
+              color: #00688b;
+            }
+          }
+        }
+      }
+    }
+    .imageDiv {
+      // @include bor();
+      @include flex();
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 50%;
+      .contactPic {
+        height: 50rem;
+        width: 60rem;
+        animation: contactupdown 2.5s infinite alternate-reverse ease-in-out;
+        // z-index: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contactContainer{
+    .contactBox{
+      flex-direction: column-reverse;
+      .contactDiv{
+        width: 100%;
+      }
+    }
+  }
+}

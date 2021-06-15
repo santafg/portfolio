@@ -1,0 +1,272 @@
+@-webkit-keyframes contactupdown {
+  from {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  to {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+}
+
+@keyframes contactupdown {
+  from {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  to {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+  }
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.contactContainer .mytoast {
+  font-size: 1.5rem;
+}
+
+.contactContainer .contactBox {
+  width: 80%;
+  margin-bottom: -4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactContainer .contactBox .contactDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #00688b;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .heading {
+  width: 90%;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .heading h1 {
+  font-size: 4rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem #33a1de;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .forms {
+  width: 90%;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .forms label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 0.1rem solid #00688b;
+  padding: 0.5rem;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .forms label h2 {
+  font-size: 2rem;
+  width: 15%;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .forms label input {
+  width: 85%;
+  border: none;
+  outline: none;
+  color: #00688b;
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .forms .messageArea {
+  border: 0.1rem solid #00688b;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .forms .messageArea .head h2 {
+  font-size: 2rem;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .forms .messageArea .body {
+  width: 100%;
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .forms .messageArea .body textarea {
+  width: 90%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  color: #00688b;
+  background-color: transparent;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .btn {
+  width: 90%;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .btn button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #00688b;
+  border: 0.1rem solid #00688b;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 2rem;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  -webkit-box-shadow: 0.2rem 0.3rem 0.5rem 0.2rem #3299cc;
+          box-shadow: 0.2rem 0.3rem 0.5rem 0.2rem #3299cc;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .btn button:hover {
+  color: #00688b;
+  background-color: white;
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+  -webkit-box-shadow: 0.2rem 0.4rem 0.8rem 0.4rem #3299cc;
+          box-shadow: 0.2rem 0.4rem 0.8rem 0.4rem #3299cc;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .btn .links {
+  margin-right: 2rem;
+}
+
+.contactContainer .contactBox .contactDiv .formDiv .btn .links a {
+  font-size: 3.5rem;
+  margin-left: .5rem;
+  color: #00688b;
+}
+
+.contactContainer .contactBox .imageDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+}
+
+.contactContainer .contactBox .imageDiv .contactPic {
+  height: 50rem;
+  width: 60rem;
+  animation: contactupdown 2.5s infinite alternate-reverse ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .contactContainer .contactBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactContainer .contactBox .contactDiv {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

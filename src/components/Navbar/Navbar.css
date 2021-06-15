@@ -1,0 +1,104 @@
+
+.navContainer {
+    position: fixed;
+    background-color: #43aee7;
+    width: 100vw;
+    height: 5rem;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  
+  .nav {
+    width: 94%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 3rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .nav .prot h1 {
+    font-size: 2.5rem;
+    color: #063764;
+  }
+  
+  .nav .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  .nav .links .link {
+    margin-top: -.5rem;
+  }
+  
+  .nav .links a {
+    text-decoration: none;
+  }
+  
+  .nav .links a button {
+    border: none;
+    outline: none;
+    margin-left: 2rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    margin-right: -1.5rem;
+    margin-left: 2rem;
+    border-radius: .25rem;
+    background-color: white;
+    color: #268fc7;
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  .nav .links a button:hover {
+    color: white;
+    background-color: #1f65aa;
+  }
+  
+  .nav .active {
+    border-bottom: 0.18rem solid white;
+  }
+  
+  .navlinks {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .navlinks:hover {
+    color: #00688b;
+    text-decoration: none;
+  }

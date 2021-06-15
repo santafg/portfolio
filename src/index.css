@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@-webkit-keyframes updown {
+  from {
+    -webkit-transform: translateY(1.5rem);
+            transform: translateY(1.5rem);
+  }
+  to {
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
+  }
+}
+
+@keyframes updown {
+  from {
+    -webkit-transform: translateY(1.5rem);
+            transform: translateY(1.5rem);
+  }
+  to {
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
+  }
+}
+
+.pageContainer {
+  background-color: #e1f2f5a4;
+}
+
+.div {
+  width: 100vw;
+  height: 100vh;
+  border: 0.1rem solid black;
+}
+
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .mainBox {
+  width: 80%;
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContainer .mainBox .imageDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 80%;
+  width: 50%;
+}
+
+.mainContainer .mainBox .imageDiv .mainPic {
+  height: 50rem;
+  width: 60rem;
+  animation: updown 2.5s infinite alternate-reverse ease-in-out;
+  z-index: 1;
+}
+
+.mainContainer .mainBox .mainDetailsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 75%;
+  width: 50%;
+}
+
+.mainContainer .mainBox .mainDetailsDiv .intro {
+  color: #00688B;
+}
+
+.mainContainer .mainBox .mainDetailsDiv .intro h5 {
+  font-size: 3rem;
+  text-shadow: .2rem .2rem .4rem #33A1DE;
+}
+
+.mainContainer .mainBox .mainDetailsDiv .intro h1 {
+  font-size: 5rem;
+  margin-top: -1rem;
+  text-shadow: .2rem .2rem .4rem #33A1DE;
+}
+
+.mainContainer .mainBox .mainDetailsDiv .intro p {
+  font-size: 1.5rem;
+}
+
+.mainContainer .mainBox .mainDetailsDiv .intro button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  background-color: #00688B;
+  border: .1rem solid #00688B;
+  color: white;
+  padding: .6rem 1.2rem;
+  font-size: 2rem;
+  -webkit-transition: .25s all;
+  transition: .25s all;
+  -webkit-box-shadow: .2rem .3rem .7rem .2rem #3299CC;
+          box-shadow: .2rem .3rem .7rem .2rem #3299CC;
+}
+
+.mainContainer .mainBox .mainDetailsDiv .intro button:hover {
+  color: #00688B;
+  background-color: white;
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+  -webkit-box-shadow: .2rem .4rem .8rem .4rem #3299CC;
+          box-shadow: .2rem .4rem .8rem .4rem #3299CC;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+  .mainContainer .mainBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContainer .mainBox .mainDetailsDiv {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 36%;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 40.5%;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 32.5%;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 30.5%;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 26.5%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

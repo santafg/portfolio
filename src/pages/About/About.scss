@@ -1,0 +1,114 @@
+// mixing
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bor {
+  border: 0.1rem solid black;
+}
+@mixin btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+// animations
+
+@keyframes aboutupdown {
+  from {
+    transform: translateY(.5rem);
+  }
+  to {
+    transform: translateY(-3rem);
+  }
+}
+
+.aboutContainer {
+  @include flex();
+  .aboutBox {
+    width: 80%;
+    margin-top: 10rem;
+    @include flex();
+    // @include bor();
+    .infoDiv {
+      // @include bor();
+      @include flex();
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 50%;
+      .info {
+        @include flex();
+        // @include bor();
+        margin-top: 1rem;
+        flex-direction: column;
+        color: #00688B;
+        .heading {
+          width: 90%;
+          
+          h1 {
+            font-size: 4rem;
+            text-shadow: .2rem .2rem .4rem #33A1DE;
+          }
+        }
+        .details {
+          width: 90%;
+          margin-top: 1rem;
+          p {
+            font-size: 1.8rem;
+          }
+        }
+        .btn {
+          width: 90%;
+          margin-top: 1.5rem;
+          // @include bor();
+          button {
+            @include btn();
+            // margin-top: rem;
+            background-color: #00688B;
+            border: .1rem solid #00688B;
+            color: white;
+            padding: .6rem 1.2rem;
+            font-size: 2rem;
+            transition: .25s ease-in-out;
+            box-shadow: .2rem .3rem .5rem .2rem #3299CC;
+          &:hover{
+            color: #00688B;
+            background-color: white;
+            transform: translateY(-.2rem);
+            box-shadow: .2rem .4rem .8rem .4rem #3299CC;
+          }
+          }
+        }
+      }
+    }
+    .picdiv {
+      // @include bor();
+      @include flex();
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 50%;
+      .aboutPic {
+        height: 50rem;
+        width: 60rem;
+        animation: aboutupdown 2.5s infinite alternate-reverse ease-in-out;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  html{
+    font-size: 52%;
+  }
+  .aboutContainer{
+    .aboutBox{
+      flex-direction: column-reverse;
+      .infoDiv{
+        width: 100%;
+      }
+    }
+  }
+}
