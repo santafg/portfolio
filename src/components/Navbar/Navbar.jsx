@@ -60,7 +60,7 @@ const Navbar = () => {
             </div>
             <div className="cv">
               <a
-                href="https://drive.google.com/file/d/1e0e_DjkUWlcOh-_I_b66wak_Tlau-LqW/view?usp=sharing"
+                href="https://drive.google.com/file/d/1hqBNwMY4_Oih3s_FG-82q-LoFXSU86s6/view?usp=sharing"
                 target="blank"
               >
                 <button>
