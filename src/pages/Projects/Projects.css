@@ -94,7 +94,7 @@
 }
 
 .projectContainer .projectBox .porjectDiv .head {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .projectContainer .projectBox .porjectDiv .head h1 {
@@ -107,21 +107,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projectContainer .projectBox .porjectDiv .projects .project {
+  margin-left: 1rem;
   border-radius: 1rem;
   background-color: white;
   -webkit-box-shadow: 0 0.5rem 1rem 0.5rem #62B1F6;
           box-shadow: 0 0.5rem 1rem 0.5rem #62B1F6;
-  width: 50%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,6 +132,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 1rem;
   cursor: pointer;
   -webkit-transition: 0.25s all;
@@ -168,7 +168,7 @@
 }
 
 .projectContainer .projectBox .porjectDiv .projects .project .btn {
-  margin-top: 0.7rem;
+  margin-top: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

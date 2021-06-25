@@ -54,7 +54,7 @@
       justify-content: flex-end;
       width: 50%;
       .head {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         h1 {
           text-shadow: 0.2rem 0.2rem 0.4rem #33a1de;
           font-size: 4rem;
@@ -62,17 +62,20 @@
       }
       .projects {
         width: 100%;
-        @include flex();
+        display: flex;
         margin: 1rem;
+        flex-wrap: wrap;
         .project {
           // @include bor();
+          margin-left: 1rem;
           border-radius: 1rem;
           background-color: white;
           // background-color: #AB82FF;
           box-shadow: 0 0.5rem 1rem 0.5rem #62B1F6;
-          width: 50%;
+          width: 45%;
           @include flex();
           flex-direction: column;
+          justify-content: flex-start;
           padding: 1rem;
           cursor: pointer;
           transition: 0.25s all;
@@ -97,7 +100,7 @@
             }
           }
           .btn {
-            margin-top: 0.7rem;
+            margin-top: auto;
             width: 100%;
             @include flex();
             justify-content: flex-end;
