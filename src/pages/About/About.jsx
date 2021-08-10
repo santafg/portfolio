@@ -16,8 +16,8 @@ const About = () => {
               </div>
               <div className="details">
                 <p>
-                  I'm a final year Student from Kolkata , currently pursuing
-                  B.Tech in the field Electrical Engineering and also have a
+                  I'm from Saltlake city (Kolkata) , just completed my 
+                  B.Tech in the field Electrical Engineering this year beside that I have a
                   great potential towards Web Devlopment .
                 </p>
                 <p> I started learning
