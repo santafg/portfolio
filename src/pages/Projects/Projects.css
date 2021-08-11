@@ -33,8 +33,7 @@
 }
 
 .projectContainer .projectBox {
-  width: 80%;
-  margin-top: 10rem;
+  margin-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,54 +46,9 @@
   color: #00688b;
 }
 
-.projectContainer .projectBox .picDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 50%;
-}
-
-.projectContainer .projectBox .picDiv .projectPic {
-  height: 50rem;
-  width: 60rem;
-  animation: updown 2.5s infinite alternate-reverse ease-in-out;
-}
-
-.projectContainer .projectBox .porjectDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 50%;
-}
-
 .projectContainer .projectBox .porjectDiv .head {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .projectContainer .projectBox .porjectDiv .head h1 {
@@ -103,22 +57,24 @@
 }
 
 .projectContainer .projectBox .porjectDiv .projects {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .projectContainer .projectBox .porjectDiv .projects .project {
-  margin-left: 1rem;
+  margin: 1rem;
   border-radius: 1rem;
   background-color: white;
-  -webkit-box-shadow: 0 0.5rem 1rem 0.5rem #62B1F6;
-          box-shadow: 0 0.5rem 1rem 0.5rem #62B1F6;
-  width: 45%;
+  -webkit-box-shadow: 0 0.5rem 1rem 0.5rem #62b1f6;
+          box-shadow: 0 0.5rem 1rem 0.5rem #62b1f6;
+  max-width: 40rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,13 +98,17 @@
 }
 
 .projectContainer .projectBox .porjectDiv .projects .project:hover {
-  -webkit-box-shadow: 0 0.8rem 1.4rem 0.7rem #62B1F6;
-          box-shadow: 0 0.8rem 1.4rem 0.7rem #62B1F6;
+  -webkit-box-shadow: 0 0.8rem 1.4rem 0.7rem #62b1f6;
+          box-shadow: 0 0.8rem 1.4rem 0.7rem #62b1f6;
   -webkit-transform: translateY(-0.5rem);
           transform: translateY(-0.5rem);
 }
 
-.projectContainer .projectBox .porjectDiv .projects .project .project1 {
+.projectContainer .projectBox .porjectDiv .projects .project .imageDiv {
+  width: 100%;
+}
+
+.projectContainer .projectBox .porjectDiv .projects .project .imageDiv .project1 {
   height: 14rem;
   width: 100%;
   border-radius: 0.5rem;
@@ -156,7 +116,7 @@
 
 .projectContainer .projectBox .porjectDiv .projects .project .description {
   width: 100%;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .projectContainer .projectBox .porjectDiv .projects .project .description h2 {
@@ -189,7 +149,7 @@
   padding: 0.1rem 1rem;
   background-color: #00688b;
   border: 0.1rem solid #00688b;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: white;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
@@ -209,16 +169,7 @@
 
 @media (max-width: 768px) {
   html {
-    font-size: 52%;
-  }
-  .projectContainer .projectBox {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .projectContainer .projectBox .porjectDiv {
-    width: 100%;
+    font-size: 62%;
   }
 }
 /*# sourceMappingURL=Projects.css.map */

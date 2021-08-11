@@ -29,50 +29,40 @@
   @include flex();
   // @include bor();
   .projectBox {
-    width: 80%;
-    margin-top: 10rem;
+    // width: 80%;
+    margin-top: 6rem;
     @include flex();
-    //   @include bor();
-
+    // @include bor();
     color: #00688b;
-    .picDiv {
-      //   @include bor();
-      @include flex();
-      flex-direction: column;
-      justify-content: flex-end;
-      width: 50%;
-      .projectPic {
-        height: 50rem;
-        width: 60rem;
-        animation: updown 2.5s infinite alternate-reverse ease-in-out;
-      }
-    }
+
     .porjectDiv {
       // @include bor();
-      @include flex();
-      flex-direction: column;
-      justify-content: flex-end;
-      width: 50%;
+      // @include flex();
+      // flex-direction: column;
+      // justify-content: flex-end;
+      // width: 50%;
       .head {
         margin-bottom: 1rem;
+        text-align: center;
         h1 {
           text-shadow: 0.2rem 0.2rem 0.4rem #33a1de;
           font-size: 4rem;
         }
       }
       .projects {
-        width: 100%;
         display: flex;
-        margin: 1rem;
+        justify-content: center;
         flex-wrap: wrap;
+        // @include bor();
         .project {
           // @include bor();
-          margin-left: 1rem;
+          margin: 1rem;
           border-radius: 1rem;
           background-color: white;
           // background-color: #AB82FF;
-          box-shadow: 0 0.5rem 1rem 0.5rem #62B1F6;
-          width: 45%;
+          box-shadow: 0 0.5rem 1rem 0.5rem #62b1f6;
+          max-width: 40rem;
+          width: 100%;
           @include flex();
           flex-direction: column;
           justify-content: flex-start;
@@ -80,21 +70,24 @@
           cursor: pointer;
           transition: 0.25s all;
           &:hover {
-            box-shadow: 0 0.8rem 1.4rem 0.7rem #62B1F6;
+            box-shadow: 0 0.8rem 1.4rem 0.7rem #62b1f6;
             transform: translateY(-0.5rem);
           }
-          .project1 {
-            height: 14rem;
+          .imageDiv{
             width: 100%;
-            border-radius: 0.5rem;
+            .project1 {
+              height: 14rem;
+              width: 100%;
+              border-radius: 0.5rem;
+            }
           }
           .description {
             width: 100%;
-            margin-top: .5rem;
-            h2{
+            margin-top: 0.5rem;
+            h2 {
               font-size: 2rem;
             }
-            p{
+            p {
               // margin-top: .7rem;
               font-size: 1.5rem;
             }
@@ -109,7 +102,7 @@
               padding: 0.1rem 1rem;
               background-color: #00688b;
               border: 0.1rem solid #00688b;
-              border-radius: .5rem;
+              border-radius: 0.5rem;
               color: white;
               transition: 0.25s ease-in-out;
               cursor: pointer;
@@ -129,15 +122,15 @@
 }
 
 @media (max-width: 768px) {
-  html{
-    font-size: 52%;
+  html {
+    font-size: 62%;
   }
-  .projectContainer{
-    .projectBox{
-      flex-direction: column;
-      .porjectDiv{
-        width: 100%;
-      }
-    }
-  }
+  // .projectContainer {
+  //   .projectBox {
+  //     flex-direction: column;
+  //     .porjectDiv {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }
