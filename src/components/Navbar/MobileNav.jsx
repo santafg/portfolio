@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 
 import { FaBars } from "react-icons/fa";
 import "./Mobilenav.css";
+import pdf from "../../Assets/resume.pdf";
 
 const MobileNav = () => {
     const [state, setstate] = useState(false)
@@ -65,7 +66,7 @@ const MobileNav = () => {
           </Link>
 
           <a className="navlinks"
-            href="https://drive.google.com/file/d/1UXHzyaJAPTt4wp8mJEjS4og5VmeX6tzD/view"
+            href={pdf}
             target="blank"
           >
             Resume

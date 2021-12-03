@@ -26,17 +26,18 @@
 }
 
 .projectContainer {
-  @include flex();
+  // @include flex();
   // @include bor();
   .projectBox {
     // width: 80%;
     margin-top: 6rem;
-    @include flex();
+    // @include flex();
     // @include bor();
     color: #00688b;
 
     .porjectDiv {
       // @include bor();
+      // width: ;
       // @include flex();
       // flex-direction: column;
       // justify-content: flex-end;
@@ -49,88 +50,98 @@
           font-size: 4rem;
         }
       }
-      .projects {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        // @include bor();
-        .project {
-          // @include bor();
-          margin: 1rem;
-          border-radius: 1rem;
+    }
+  }
+}
+.projects {
+  // @include bor();
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  .project {
+    border-radius: 1rem;
+    background-color: white;
+    width: 100%;
+    max-width: 46rem;
+    margin: 2rem;
+    box-shadow: 0 0.5rem 1rem 0.5rem #62b1f6;
+    @include flex();
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.25s all;
+    &:hover {
+      box-shadow: 0 0.8rem 1.4rem 0.7rem #62b1f6;
+      transform: translateY(-0.5rem);
+    }
+    .imageDiv {
+      width: 100%;
+      .project1 {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+    .description {
+      width: 100%;
+      margin-top: 0.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        // margin-top: .7rem;
+        font-size: 1.5rem;
+      }
+    }
+    .btn {
+      margin-top: auto;
+      width: 100%;
+      @include flex();
+      justify-content: flex-end;
+      button {
+        font-size: 2rem;
+        padding: 0.1rem 1rem;
+        background-color: #00688b;
+        border: 0.1rem solid #00688b;
+        border-radius: 0.5rem;
+        color: white;
+        transition: 0.25s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0.2rem 0.3rem 0.5rem 0.2rem #3299cc;
+        &:hover {
+          color: #00688b;
           background-color: white;
-          // background-color: #AB82FF;
-          box-shadow: 0 0.5rem 1rem 0.5rem #62b1f6;
-          max-width: 40rem;
-          width: 100%;
-          @include flex();
-          flex-direction: column;
-          justify-content: flex-start;
-          padding: 1rem;
-          cursor: pointer;
-          transition: 0.25s all;
-          &:hover {
-            box-shadow: 0 0.8rem 1.4rem 0.7rem #62b1f6;
-            transform: translateY(-0.5rem);
-          }
-          .imageDiv{
-            width: 100%;
-            .project1 {
-              height: 14rem;
-              width: 100%;
-              border-radius: 0.5rem;
-            }
-          }
-          .description {
-            width: 100%;
-            margin-top: 0.5rem;
-            h2 {
-              font-size: 2rem;
-            }
-            p {
-              // margin-top: .7rem;
-              font-size: 1.5rem;
-            }
-          }
-          .btn {
-            margin-top: auto;
-            width: 100%;
-            @include flex();
-            justify-content: flex-end;
-            button {
-              font-size: 2rem;
-              padding: 0.1rem 1rem;
-              background-color: #00688b;
-              border: 0.1rem solid #00688b;
-              border-radius: 0.5rem;
-              color: white;
-              transition: 0.25s ease-in-out;
-              cursor: pointer;
-              box-shadow: 0.2rem 0.3rem 0.5rem 0.2rem #3299cc;
-              &:hover {
-                color: #00688b;
-                background-color: white;
-                transform: translateY(-0.2rem);
-                box-shadow: 0.2rem 0.4rem 0.8rem 0.4rem #3299cc;
-              }
-            }
-          }
+          transform: translateY(-0.2rem);
+          box-shadow: 0.2rem 0.4rem 0.8rem 0.4rem #3299cc;
         }
       }
     }
   }
 }
 
-@media (max-width: 768px) {
-  html {
-    font-size: 62%;
+@media (max-width: 426px) {
+  .projects .row .project {
+    // @include bor();
+    border-radius: 1rem;
+    background-color: white;
+    width: 100%;
+    max-width: 56rem;
+    margin: 2rem;
+    box-shadow: 0 0.5rem 1rem 0.5rem #62b1f6;
+    @include flex();
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.25s all;
   }
-  // .projectContainer {
-  //   .projectBox {
-  //     flex-direction: column;
-  //     .porjectDiv {
-  //       width: 100%;
-  //     }
-  //   }
-  // }
+  .row {
+    // @include bor();
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

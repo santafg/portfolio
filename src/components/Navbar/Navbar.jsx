@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 
 import './Navbar.css'
+import pdf from "../../Assets/resume.pdf";
 
 const Navbar = () => {
   return (
@@ -60,7 +61,7 @@ const Navbar = () => {
             </div>
             <div className="cv">
               <a
-                href="https://drive.google.com/file/d/1UXHzyaJAPTt4wp8mJEjS4og5VmeX6tzD/view"
+                href={pdf}
                 target="blank"
               >
                 <button>
