@@ -1,5 +1,6 @@
 import secommerce from "./images/scom.JPG";
 import memelok from "./images/memelok.JPG";
+import theogs from "./images/theogs.JPG";
 
 import notescloud from "./images/nc.JPG";
 import social from "./images/fbsocial.JPG";
@@ -11,6 +12,13 @@ export const projects = [
     description:
       "Memelok is a responsive dynamic web app which been developed by using React and Node . A user have to register first through mail after that he or she can post , like , edit , follow , report , update profile pic etc. kind of activities .",
     link: "https://memelok.netlify.app",
+  },
+  {
+    image: `${theogs}`,
+    name: "TheOGs",
+    description:
+      "It's a site to play easy games . It's developed by using React js .",
+    link: "https://theogs.netlify.app/",
   },
   {
     image: `${secommerce}`,
