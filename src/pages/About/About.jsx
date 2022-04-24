@@ -21,7 +21,7 @@ const About = () => {
                   great potential towards Web Devlopment .
                 </p>
                 <p> I started learning
-                  Web Devlopment from November 2020 and fell in love with the
+                  Web Devlopment from Year 2020 and fell in love with the
                   concepts of Web Devlopment and started exploring the
                   technologies like 'Reactjs' , 'Nodejs' , 'Expressjs' ,
                   'MongoDB' , after gathering some basic knowledge about those
