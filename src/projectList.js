@@ -10,7 +10,7 @@ export const projects = [
     image: `${memelok}`,
     name: "Memelok",
     description:
-      "Memelok is a responsive dynamic web app which been developed by using React and Node . A user have to register first through mail after that he or she can post , like , edit , follow , report , update profile pic etc. kind of activities .",
+      "Memelok is a responsive dynamic Social media meme web app which been developed by using React and Node .",
     link: "https://memelok.netlify.app",
   },
   {
