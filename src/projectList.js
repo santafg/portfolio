@@ -24,7 +24,7 @@ export const projects = [
     image: `${secommerce}`,
     name: "Secommerce",
     description: "It is a responsive dynamic ecommerce site like Amazon . ",
-    link: "https://secom.netlify.app",
+    link: "https://secommerce.vercel.app",
   },
   {
     image: `${notescloud}`,
