@@ -14,7 +14,7 @@ const Main = () => {
             <div className="intro">
               <h5>Hello !</h5>
               <h1>I'm Santanu Ghosh</h1>
-              <p>A MERN-Stack Web Developer</p>
+              <p>A Software Developer</p>
               <Link
                 to="about"
                 spy={true}

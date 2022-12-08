@@ -224,6 +224,8 @@
 
 .contactContainer .contactBox .contactDiv .formDiv .btn .links {
   margin-right: 2rem;
+  display: flex;
+  gap: .6rem;
 }
 
 .contactContainer .contactBox .contactDiv .formDiv .btn .links a {

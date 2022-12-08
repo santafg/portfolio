@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 import { FaBars } from "react-icons/fa";
 import "./Mobilenav.css";
-import pdf from "../../Assets/resume.pdf";
+import pdf from "../../Assets/SantanuGhosh_Resume.pdf";
 
 const MobileNav = () => {
     const [state, setstate] = useState(false)

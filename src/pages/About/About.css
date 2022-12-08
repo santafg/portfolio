@@ -96,10 +96,13 @@
 .aboutContainer .aboutBox .infoDiv .info .details {
   width: 90%;
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
 }
 
 .aboutContainer .aboutBox .infoDiv .info .details p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .aboutContainer .aboutBox .infoDiv .info .btn {

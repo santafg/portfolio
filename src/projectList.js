@@ -26,13 +26,13 @@ export const projects = [
     description: "It is a responsive dynamic ecommerce site like Amazon . ",
     link: "https://secommerce.vercel.app",
   },
-  {
-    image: `${notescloud}`,
-    name: "Note's Cloud",
-    description:
-      "A Responsive Webapp to save personal notes online , a particular user must have to register first for saving the notes. ",
-    link: "https://notes-cloud.herokuapp.com",
-  },
+  // {
+  //   image: `${notescloud}`,
+  //   name: "Note's Cloud",
+  //   description:
+  //     "A Responsive Webapp to save personal notes online , a particular user must have to register first for saving the notes. ",
+  //   link: "https://notes-cloud.herokuapp.com",
+  // },
   {
     image: `${social}`,
     name: "Social",
