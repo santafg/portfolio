@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 
 import './Navbar.css'
-import pdf from "../../Assets/SantanuGhosh_Resume.pdf";
+import pdf from "../../Assets/Resume_Santanu_two.pdf";
 
 const Navbar = () => {
   return (
